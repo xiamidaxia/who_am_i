@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #151515 url("../images/bkg.png") 0 0;
-  color: #eaeaea;
+  color: #bbb;
   font: 16px;
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -12,7 +12,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 600px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 li {
-  line-height: 1.4 ;
+  line-height: 1.5 ;
 }
 
 /* Header, <header>
@@ -46,7 +46,6 @@ header {
 header h1 {
   font-size: 30px;
   line-height: 1.5;
-  margin: 0 0 0 -40px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #b5e853;
@@ -58,17 +57,20 @@ header h1 {
 }
 
 header h1:before {
-  content: "./ ";
   font-size: 24px;
 }
 
-header h2 {
-  font-size: 18px;
-  font-weight: 300;
+#infos {
+  font-size: 14px;
   color: #666;
 }
+#infos p {
+    margin:0;
+    padding:0;
+    line-height:1.8;
+}
 
-#downloads .btn {
+#links .btn {
   display: inline-block;
   text-align: center;
   margin: 0;
@@ -222,26 +224,46 @@ hr {
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
-/* Links
-   a, a:hover, a:visited
-*/
 
-a {
-  color: #63c0f5;
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
-}
 
 /* Clearfix */
 
-.cf:before, .cf:after {
+.clearfix:before, .clearfix:after {
   content:"";
   display:table;
 }
 
-.cf:after {
+.clearfix:after {
   clear:both;
 }
 
-.cf {
+.clearfix {
   zoom:1;
+}
+
+a {
+    text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+}
+#main_content ul.will-list {
+    color: #bbb
+}
+#main_content ul{
+    color: #666
+}
+
+#main_content h3 {
+    margin-top: 40px;
+}
+#main_content p {
+    position:relative;
+    padding-left: 120px;
+}
+
+#main_content p>a,
+#main_content p>label {
+    position:absolute;
+    display:block;
+    left:0;
+    top:0;
+    color: rgb(143, 200, 226);
 }
