@@ -274,3 +274,9 @@ a {
     top:0;
     color: rgb(143, 200, 226);
 }
+.browser-confirm {
+    background: rgb(246, 92, 92);
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
