@@ -105,6 +105,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
 }
 
+#main_content h3 span {
+    font-size: 16px;
+}
+
 #main_content h4 {
   font-size: 14px;
 }
@@ -279,4 +283,7 @@ a {
     padding: 10px;
     margin: 0;
     color: white;
+}
+.just-print {
+    display:none
 }
