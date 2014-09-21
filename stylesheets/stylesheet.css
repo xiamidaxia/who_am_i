@@ -79,10 +79,6 @@ header h1:before {
 /* Main Content
 */
 
-#main_content {
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
-}
 section img {
   max-width: 100%
 }
@@ -243,13 +239,22 @@ hr {
 
 a {
     text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+    color: rgb(143, 200, 226);
 }
+#main_content {
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 100px;
+}
+
 #main_content ul.will-list {
     color: #bbb
 }
-#main_content ul{
+
+#main_content ul {
     color: #666
 }
+
 
 #main_content h3 {
     margin-top: 40px;
@@ -258,8 +263,10 @@ a {
     position:relative;
     padding-left: 120px;
 }
+#main_content p.long {
+    padding-left: 200px;
+}
 
-#main_content p>a,
 #main_content p>label {
     position:absolute;
     display:block;
